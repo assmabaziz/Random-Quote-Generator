@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="shortcut icon" href="./images/favicon-150x150.png" type="image/x-icon">
+    <title>Random Quotes Generator</title>
+</head>
+
+<body class="bg-[#F8EDE3]">
+    <main class="container h-screen flex justify-center items-center ">
+        <section class="main-section bg-img w-1/2 mx-auto p-5 text-center rounded-lg bg-[#DFD3C3] relative">
+
+            <div class="quote py-5 px-2 mb-3 h-[300px] flex justify-center items-center flex-col ">
+                <span
+                    class="text-white font-medium inline-block h-[30px] w-[30px] rounded-full bg-red-600 absolute top-[-15px] left-1/2"
+                    id="quoteIndex">
+                    0
+                </span>
+                <div>
+                    <span class="inline-block p-2 relative">
+                        <span class="absolute top-0 left-[-10px]">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        <span class="text-3xl font-medium mb-3 font-['amatic']" id="quote">Quote will appear here</span>
+                        <span class="absolute top-0 right-[-10px]">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                    </span>
+                </div>
+                <h2 class="text-xl font-medium" id="authorQuote"> Quote's author will appear here</h2>
+            </div>
+            <div class="flex gap-5 flex-wrap justify-center py-5 mb-3">
+                <button class="btn-style hover:bg-green-500 border-green-500" id="nextQuote">next quote</button>
+                <button class="btn-style hover:bg-yellow-500 border-yellow-500" id="autoGenerate">auto generate</button>
+                <button class="btn-style hover:bg-red-500 border-red-500" id="stopGenerate">stop auto generate</button>
+            </div>
+            <div>
+                <h3 id="autoGenerateActive"></h3>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
